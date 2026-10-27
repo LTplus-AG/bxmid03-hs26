@@ -11,13 +11,13 @@ notebooks/
 
 ## Notebooks 27.10. · Automatisierung I
 
-Jedes Notebook beginnt mit **Modell wählen** (Dropdown). Teams mit eigenem Repository tragen stattdessen im eigenen Block den GitHub-Link zu ihrer IFC-Datei ein.
+Drei Notebooks, aufeinander aufbauend. Jedes beginnt mit **Modell wählen** (Auswahlliste mit Beispielmodellen oder eigene Datei).
 
 | Notebook | Inhalt | Öffnen |
 |---|---|---|
-| 01 Basis · IfcOpenShell | Wand-Check „Breite > 0“ mit IfcOpenShell, Ergebnis als CSV | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/01_Basis_IfcOpenShell.ipynb) |
-| 02 Basis · IFC-Lite | Derselbe Check mit IFC-Lite in Python (`ifclite-geom`) | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/02_Basis_IFC-Lite.ipynb) |
-| 03 Fortgeschritten · 3D | Check plus 3D-Ansicht ([ifc-anywidget](https://github.com/sanzoghenzo/ifc-viewer-anywidget), IFC-Lite-Renderer). Braucht Chrome oder Edge (WebGPU). | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/03_Fortgeschritten_3D.ipynb) |
+| 01 · Einstieg | So funktioniert Colab · Modell erkunden · ein Bauteil im Detail · eine Regel prüfen (bestanden / durchgefallen / fehlend) · Tabelle und CSV · dasselbe mit IFC-Lite | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/01_Einstieg_Colab_und_IFC.ipynb) |
+| 02 · Fortgeschritten | Modell als Tabelle · Dashboard mit Diagrammen · interaktiver Filter · IDS in Python schreiben und prüfen · 3D-Ansicht mit Klick zurück in Python ([ifc-anywidget](https://github.com/sanzoghenzo/ifc-viewer-anywidget), braucht Chrome oder Edge) | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/02_Fortgeschritten_Dashboard_IDS_3D.ipynb) |
+| 03 · Ausblick | Eigener 3D-Viewer mit Prüffarben (IFC-Lite-Geometrie) · Grundriss aus der Geometrie · Ergebnis ins IFC zurückschreiben · zwei Modellstände vergleichen · HTML-Bericht auf Knopfdruck | [In Colab öffnen](https://colab.research.google.com/github/LTplus-AG/bxmid03-hs26/blob/main/notebooks/2026-10-27_Automatisierung-I/03_Ausblick_Was_ist_moeglich.ipynb) |
 
 ## Notebooks speichern
 
