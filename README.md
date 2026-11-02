@@ -28,6 +28,8 @@ Drei Notebooks, aufeinander aufbauend. Jedes beginnt mit **Modell wählen** (Aus
 
 Ohne Colab: `modelle/STR_mit_Airtable_Links.ifc` in [ifclite.com](https://www.ifclite.com) öffnen, Bauteil anklicken → `CPSet_Airtable`.
 
+**Airtable-Daten zum Modell:** [Basis „BFH IFC Demo“](https://airtable.com/appNGbI0mNP8RhZzZ/shrhbra4Qz7Lc4fnS) – ansehen ohne Konto; zum Bearbeiten oben **Copy base** (gratis Airtable-Konto).
+
 ## Notebooks speichern
 
 In Colab: *Datei → Kopie in GitHub speichern*.
@@ -43,7 +45,7 @@ Ohne Speichern gehen Änderungen beim Schliessen von Colab verloren.
 | `Team_1_Bruecke_Arbeitsmodell.ifc` | IFC4X3_ADD2 | IFC-Lite-Testkorpus (ifcbridge-model01), nach IFC4X3 migriert; Lager- und Baujahrdaten sind synthetische Lehrdaten |
 | `Team_4_Snowdon_Structural_Baufortschritt.ifc` | IFC2X3 | Snowdon Towers Sample (Structural); Termin- und Montagedaten sind synthetische Lehrdaten |
 | `Team_5_BIMcollab_Example_STR.ifc` | IFC2X3 | BIMcollab-Beispielmodell (Tragwerk), unverändert |
-| `STR_mit_Airtable_Links.ifc` | IFC2X3 | BIMcollab-Tragwerksmodell; 225 Bauteile mit `CPSet_Airtable` und `IfcDocumentReference` auf eine (private) Airtable-Basis, Lehrbeispiel 2025 |
+| `STR_mit_Airtable_Links.ifc` | IFC2X3 | BIMcollab-Tragwerksmodell; 225 Bauteile mit `CPSet_Airtable` und `IfcDocumentReference` auf die Airtable-Basis „BFH IFC Demo“ (öffentlicher Lesezugriff über den Link oben), Lehrbeispiel 2025 |
 | `airtable_export_beispiel.csv` | CSV | Simulierter Airtable-Export zu diesem Modell, mit zwei absichtlichen Zuordnungsfehlern (für Notebook 04) |
 | `Demo_Holzrahmen_fehlerhaft.ifc` / `_korrigiert.ifc` / `.ids` | IFC4 | Lehrbeispiel 20.10.2026: eine Wand, Width = 0 bzw. 0.1143 m |
 
