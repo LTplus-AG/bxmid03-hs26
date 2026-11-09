@@ -2,7 +2,7 @@
 
 Modell: `Team_1_Bruecke_BFH_Minor.ifc` (bereinigte Kopie von `Team_1_Bruecke_Arbeitsmodell.ifc`, Stand 9.11.2026)
 
-Alle 163 Bauteile haben genau ein Property Set **`BFH_Minor`**. Pro Kategorie gibt es 2–3 Properties plus `Einbaujahr`. Die Werte sind fiktiv, aber plausibel. Zahlen sind ganze Zahlen ohne Einheit im Modell (`Ueberdeckung` 55 heisst 55 mm).
+Alle 163 Bauteile haben genau ein Property Set **`BFH_Minor`**. Pro Kategorie gibt es 2–3 Properties plus `Einbaujahr`. Die Werte sind fiktiv, aber plausibel. Zahlen stehen ohne Einheit im Modell, die Einheit steht im Tabellenkopf.
 
 Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
 
@@ -76,6 +76,5 @@ Die Lagerdaten stehen neu in `BFH_Minor` statt in `CH_Lager`. In eurem Team-Repo
 - Bauwerk erstellt 2005 (`Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung und Fahrbahnübergänge wurden 2018 erneuert, deshalb `Einbaujahr` 2018.
 - Sauberkeitsschicht und Magerbeton sind unbewehrt: `Ueberdeckung` = 0 heisst «nicht anwendbar». Regeln wie «Ueberdeckung ≥ 20» müssen diese Bauteile ausnehmen.
 - Entfernt wurden: alle bisherigen Element-Psets (`ASB-ING_2013`, `sonstige Attribute`, `Hyperlinks`, `Pset_BuildingElementProxyCommon`, `Pset_ManufacturerTypeInformation`, `Pset_RailingCommon`, `CH_Lager`, `CH_Lehre`) sowie zwei Hilfsobjekte ohne Bauteilcharakter (Projektnullpunkt, 3D-Jahreszahl).
-- Bereinigt sind die Psets und das Attribut `Name`. Geometrie, GlobalIds, IFC-Klassen, die Psets am IfcBridge sowie `ObjectType` und die Typobjekte (Revit-Bezeichnungen, alle IfcBuildingElementProxyType) sind unverändert.
-- Absichtlicher Prüffall wie im Originalmodell: Alle Lager haben den PredefinedType ELASTOMERIC, 5 davon sind aber Topf- oder Kalottenlager. Eure Regel R-01 findet genau diese 5.
-- Kopfplatten sind teils IfcPlate, teils IfcBuildingElementProxy (wie im Original).
+- Unverändert: Geometrie, GlobalIds, IFC-Klassen, die Psets am IfcBridge, `ObjectType` und die Typobjekte (Revit-Bezeichnungen, alle IfcBuildingElementProxyType).
+- Wie im Original: Alle Lager haben den PredefinedType ELASTOMERIC, 5 davon sind aber Topf- oder Kalottenlager (absichtlicher Prüffall, eure Regel R-01 findet genau diese 5). Kopfplatten sind teils IfcPlate, teils IfcBuildingElementProxy.
