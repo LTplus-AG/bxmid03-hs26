@@ -4,16 +4,16 @@ Modell: `Team_1_Bruecke_BFH_Minor.ifc` (bereinigte Kopie von `Team_1_Bruecke_Arb
 
 Alle 163 Bauteile haben genau ein Property Set **`BFH_Minor`**. Pro Kategorie gibt es 2–3 Properties plus `Einbaujahr`. Die Werte sind fiktiv, aber plausibel. Zahlen stehen ohne Einheit im Modell, die Einheit steht im Tabellenkopf.
 
-Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
+Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage (aus der Geometrie bestimmt) und, wo nötig, eine Nummer in Brückenlängsrichtung von West nach Ost: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
 
 ## Properties pro Kategorie
 
-| Kategorie | Properties in `BFH_Minor` | Datentyp |
+| Kategorie | Properties in `BFH_Minor` | Datentyp (für IDS `dataType`) |
 |---|---|---|
-| Beton | `NPK_Typ`, `Bewehrungsstahl`, `Ueberdeckung` [mm], `Einbaujahr` | Text, Text, Ganzzahl, Ganzzahl |
-| Belag | `Schichtstaerke` [mm], `Sorte`, `Einbaujahr` | Ganzzahl, Text, Ganzzahl |
-| Stahl | `Stahlqualitaet`, `Korrosionsschutz`, `Profil`, `Einbaujahr` | Text, Text, Text, Ganzzahl |
-| Lager | `Lagertyp`, `Lieferant`, `Modell`, `Einbaujahr` | Text, Text, Text, Ganzzahl |
+| Beton | `NPK_Typ`, `Bewehrungsstahl`, `Ueberdeckung` [mm], `Einbaujahr` | IfcLabel, IfcLabel, IfcInteger, IfcInteger |
+| Belag | `Schichtstaerke` [mm], `Sorte`, `Einbaujahr` | IfcInteger, IfcLabel, IfcInteger |
+| Stahl | `Stahlqualitaet`, `Korrosionsschutz`, `Profil`, `Einbaujahr` | IfcLabel, IfcLabel, IfcLabel, IfcInteger |
+| Lager | `Lagertyp`, `Lieferant`, `Modell`, `Einbaujahr` | IfcLabel, IfcLabel, IfcLabel, IfcInteger |
 
 Property-Namen ohne Umlaute (ae/oe/ue), damit sie sich in IDS-Regeln einfach schreiben lassen.
 
