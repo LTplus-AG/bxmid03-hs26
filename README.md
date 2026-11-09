@@ -43,6 +43,7 @@ Ohne Speichern gehen Änderungen beim Schliessen von Colab verloren.
 | Datei | Schema | Herkunft |
 |---|---|---|
 | `Team_1_Bruecke_Arbeitsmodell.ifc` | IFC4X3_ADD2 | IFC-Lite-Testkorpus (ifcbridge-model01), nach IFC4X3 migriert; Lager- und Baujahrdaten sind synthetische Lehrdaten |
+| `Team_1_Bruecke_BFH_Minor.ifc` | IFC4X3_ADD2 | Bereinigte Kopie des Team-1-Arbeitsmodells (9.11.2026): ein Pset `BFH_Minor` pro Bauteil mit 2–3 Properties je Kategorie plus `Einbaujahr`, alle ausgefüllt (fiktive Lehrdaten). Übersicht: `Team_1_Elementplan.md` |
 | `Team_4_Snowdon_Structural_Baufortschritt.ifc` | IFC2X3 | Snowdon Towers Sample (Structural); Termin- und Montagedaten sind synthetische Lehrdaten |
 | `Team_5_BIMcollab_Example_STR.ifc` | IFC2X3 | BIMcollab-Beispielmodell (Tragwerk), unverändert |
 | `STR_mit_Airtable_Links.ifc` | IFC2X3 | BIMcollab-Tragwerksmodell; 225 Bauteile mit `CPSet_Airtable` und `IfcDocumentReference` auf die Airtable-Basis „BFH IFC Demo“ (öffentlicher Lesezugriff über den Link oben), Lehrbeispiel 2025 |
