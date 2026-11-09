@@ -4,7 +4,7 @@ Modell: `Team_1_Bruecke_BFH_Minor.ifc` (bereinigte Kopie von `Team_1_Bruecke_Arb
 
 Alle 163 Bauteile haben genau ein Property Set **`BFH_Minor`**. Pro Kategorie gibt es 2–3 Properties plus `Einbaujahr`. Die Werte sind fiktiv, aber plausibel. Zahlen stehen ohne Einheit im Modell, die Einheit steht im Tabellenkopf.
 
-Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage, wo nötig mit Nummer von West nach Ost. Kürzel: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
+Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage, wo nötig mit Nummer von West nach Ost (übereinander liegende Teile von unten nach oben). Kürzel: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
 
 ## Properties pro Kategorie
 
@@ -22,15 +22,15 @@ Property-Namen ohne Umlaute (ae/oe/ue), damit sie sich in IDS-Regeln einfach sch
 | Bauteil | IFC-Klasse | Anzahl | `NPK_Typ` | `Bewehrungsstahl` | `Ueberdeckung` [mm] | `Einbaujahr` |
 |---|---|---|---|---|---|---|
 | Gesims | IfcBeam | 4 | NPK G | B500B | 55 | 2005 |
-| Endquerträger | IfcBeam | 4 | NPK D | B500B | 40 | 2005 |
+| Endquerträger | IfcBeam | 4 | NPK F | B500B | 55 | 2005 |
 | Kappe | IfcBeam | 4 | NPK G | B500B | 55 | 2005 |
 | Kappe Übergang | IfcBuildingElementProxy | 1 | NPK G | B500B | 55 | 2005 |
 | Pfeiler | IfcColumn | 3 | NPK F | B500C | 55 | 2005 |
 | Sauberkeitsschicht | IfcFooting | 4 | NPK A | unbewehrt | 0 | 2005 |
 | Fundament | IfcFooting | 6 | NPK C | B500B | 50 | 2005 |
 | Magerbeton | IfcFooting | 2 | NPK A | unbewehrt | 0 | 2005 |
-| Fahrbahnplatte Fertigteil | IfcSlab | 2 | NPK D | B500B | 35 | 2005 |
-| Fahrbahnplatte Ortbeton | IfcSlab | 2 | NPK D | B500B | 40 | 2005 |
+| Fahrbahnplatte Fertigteil | IfcSlab | 2 | NPK D | B500B | 40 | 2005 |
+| Fahrbahnplatte Ortbeton | IfcSlab | 2 | NPK F | B500B | 55 | 2005 |
 | Böschungstreppe | IfcStair | 4 | NPK C | B500A | 35 | 2005 |
 | Flügelwand | IfcWall | 4 | NPK F | B500B | 55 | 2005 |
 | Widerlagerwand | IfcWall | 5 | NPK F | B500B | 55 | 2005 |
