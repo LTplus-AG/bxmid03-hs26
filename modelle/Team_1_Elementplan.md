@@ -33,8 +33,8 @@ Property-Namen ohne Umlaute (ae/oe/ue), damit sie sich in IDS-Regeln einfach sch
 | Fahrbahnplatte Ortbeton | IfcSlab | 2 | NPK F | B500B | 55 | 2005 |
 | Böschungstreppe | IfcStair | 4 | NPK C | B500A | 35 | 2005 |
 | Flügelwand | IfcWall | 4 | NPK F | B500B | 55 | 2005 |
-| Widerlagerwand | IfcWall | 5 | NPK F | B500B | 55 | 2005 |
-| Hilfswand | IfcWall | 1 | NPK F | B500B | 55 | 2005 |
+| Hilfswand | IfcWall | 2 | NPK F | B500B | 55 | 2005 |
+| Widerlagerwand | IfcWall | 4 | NPK F | B500B | 55 | 2005 |
 
 ## Belag (19 Bauteile)
 
