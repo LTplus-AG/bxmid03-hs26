@@ -71,8 +71,7 @@ Die Lagerdaten stehen neu in `BFH_Minor` statt in `CH_Lager`. In `requirements/T
 
 ## Hinweise
 
-- Bauwerk erstellt 2005 (`CH_Bauwerksdaten.Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung und Fahrbahnübergänge wurden 2018 erneuert, deshalb `Einbaujahr` 2018.
-- Sauberkeitsschicht und Magerbeton sind unbewehrt: `Bewehrungsstahl` = `unbewehrt`, `Ueberdeckung` = 0.
+- Bauwerk erstellt 2005 (`Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung und Fahrbahnübergänge wurden 2018 erneuert, deshalb `Einbaujahr` 2018.
 - Entfernt wurden: alle bisherigen Element-Psets (`ASB-ING_2013`, `sonstige Attribute`, `Hyperlinks`, `Pset_BuildingElementProxyCommon`, `Pset_ManufacturerTypeInformation`, `Pset_RailingCommon`, `CH_Lager`, `CH_Lehre`) sowie zwei Hilfsobjekte ohne Bauteilcharakter (Projektnullpunkt, 3D-Jahreszahl).
 - Geometrie, GlobalIds, IFC-Klassen und die Psets am IfcBridge sind unverändert.
-- Wie im Originalmodell haben alle Lager den PredefinedType ELASTOMERIC, auch die Topf- und Kalottenlager (das prüft eure Regel R-01). Kopfplatten gibt es als IfcPlate (28) und als IfcBuildingElementProxy (24).
+- Wie im Originalmodell haben alle Lager den PredefinedType ELASTOMERIC, auch die Topf- und Kalottenlager (das prüft eure Regel R-01). Kopfplatten sind teils IfcPlate, teils IfcBuildingElementProxy.
