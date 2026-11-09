@@ -3,7 +3,7 @@
 Kursmaterial für das Minor BXMid03 (BFH, Architektur, Holz und Bau): Arbeitsmodelle und Colab-Notebooks. Die Modelle dienen nur der Kursarbeit.
 
 ```
-modelle/                         IFC-Arbeitsmodelle und Demo-IDS
+modelle/                         IFC-Arbeitsmodelle, Demo-IDS, Elementplan Team 1
 notebooks/
   2026-10-27_Automatisierung-I/  Notebooks pro Kurstag
   2026-11-03_Validierung/        Notebook 04: Daten ausserhalb des IFC (Airtable)
@@ -43,7 +43,7 @@ Ohne Speichern gehen Änderungen beim Schliessen von Colab verloren.
 | Datei | Schema | Herkunft |
 |---|---|---|
 | `Team_1_Bruecke_Arbeitsmodell.ifc` | IFC4X3_ADD2 | IFC-Lite-Testkorpus (ifcbridge-model01), nach IFC4X3 migriert; Lager- und Baujahrdaten sind synthetische Lehrdaten |
-| `Team_1_Bruecke_BFH_Minor.ifc` | IFC4X3_ADD2 | Bereinigte Kopie des Team-1-Arbeitsmodells, ein Pset `BFH_Minor` pro Bauteil (fiktive Lehrdaten). Details: `Team_1_Elementplan.md` |
+| `Team_1_Bruecke_BFH_Minor.ifc` | IFC4X3_ADD2 | Bereinigte Kopie des Team-1-Arbeitsmodells, ein Pset `BFH_Minor` pro Bauteil (fiktive Lehrdaten). Details: [`Team_1_Elementplan.md`](modelle/Team_1_Elementplan.md) |
 | `Team_4_Snowdon_Structural_Baufortschritt.ifc` | IFC2X3 | Snowdon Towers Sample (Structural); Termin- und Montagedaten sind synthetische Lehrdaten |
 | `Team_5_BIMcollab_Example_STR.ifc` | IFC2X3 | BIMcollab-Beispielmodell (Tragwerk), unverändert |
 | `STR_mit_Airtable_Links.ifc` | IFC2X3 | BIMcollab-Tragwerksmodell; 225 Bauteile mit `CPSet_Airtable` und `IfcDocumentReference` auf die Airtable-Basis „BFH IFC Demo“ (öffentlicher Lesezugriff über den Link oben), Lehrbeispiel 2025 |

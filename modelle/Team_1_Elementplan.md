@@ -55,8 +55,8 @@ Property-Namen ohne Umlaute (ae/oe/ue), damit sie sich in IDS-Regeln einfach sch
 | Kopfplatte | IfcPlate | 28 | S355J2+N | EP-Zinkstaub + 2x EP, 310 µm | Blech 40 mm | 2005 |
 | Schutzplanke | IfcRailing | 4 | S235JR | feuerverzinkt | A-Profil | 2005 |
 | Geländer | IfcRailing | 2 | S235JRH | feuerverzinkt | RRW 60x40 | 2005 |
-| Schutzplanke Seitenstreifen-W | IfcRailing | 1 | S235JR | feuerverzinkt | A-Profil | 2005 |
-| Schutzplanke Seitenstreifen-O | IfcRailing | 1 | S235JR | feuerverzinkt | A-Profil | 2005 |
+| Schutzplanke Seitenstreifen-W | IfcRailing | 1 | S235JR | feuerverzinkt | A-Profil | 2018 |
+| Schutzplanke Seitenstreifen-O | IfcRailing | 1 | S235JR | feuerverzinkt | A-Profil | 2018 |
 | Fahrbahnübergang | IfcDiscreteAccessory | 4 | S355J2+N | EP-Zinkstaub + 2x EP, 370 µm | Einprofil-Übergang 80 mm | 2018 |
 
 ## Lager (8 Bauteile)
@@ -73,7 +73,7 @@ Die Lagerdaten stehen neu in `BFH_Minor` statt in `CH_Lager`. In eurem Team-Repo
 
 ## Hinweise
 
-- Bauwerk erstellt 2005 (`Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung und Fahrbahnübergänge wurden 2018 erneuert, deshalb `Einbaujahr` 2018.
+- Bauwerk erstellt 2005 (`Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung, Fahrbahnübergänge und die Schutzplanken an den BAB-Seitenstreifen sind von 2018.
 - Sauberkeitsschicht und Magerbeton sind unbewehrt: `Ueberdeckung` = 0 heisst «nicht anwendbar». Regeln wie «Ueberdeckung ≥ 20» müssen diese Bauteile ausnehmen.
 - Entfernt wurden: alle bisherigen Element-Psets (`ASB-ING_2013`, `sonstige Attribute`, `Hyperlinks`, `Pset_BuildingElementProxyCommon`, `Pset_ManufacturerTypeInformation`, `Pset_RailingCommon`, `CH_Lager`, `CH_Lehre`) sowie zwei Hilfsobjekte ohne Bauteilcharakter (Projektnullpunkt, 3D-Jahreszahl).
 - Unverändert: Geometrie, GlobalIds, IFC-Klassen, die Psets am IfcBridge, `ObjectType` und die Typobjekte (Revit-Bezeichnungen, alle IfcBuildingElementProxyType).
