@@ -4,7 +4,7 @@ Modell: `Team_1_Bruecke_BFH_Minor.ifc` (bereinigte Kopie von `Team_1_Bruecke_Arb
 
 Alle 163 Bauteile haben genau ein Property Set **`BFH_Minor`**. Pro Kategorie gibt es 2–3 Properties plus `Einbaujahr`. Die Werte sind fiktiv, aber plausibel. Zahlen stehen ohne Einheit im Modell, die Einheit steht im Tabellenkopf.
 
-Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage, wo nötig mit Nummer: von West nach Ost (Bauteilmitte), übereinander liegende Teile von unten nach oben, parallele Streifen quer zu ihrer Längsrichtung von West nach Ost. Kürzel: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
+Zusätzlich zu prüfen: das Attribut **`Name`** (lesbar und eindeutig, z. B. `Flügelwand WL-NO`). Jeder Name enthält die Lage, wo nötig mit Nummer: von West nach Ost (Bauteilmitte), übereinander liegende Teile von unten nach oben, parallele, sich überdeckende Streifen (Betonpflaster Mittelstreifen, Schutzplanken UB) quer zu ihrer Längsrichtung von West nach Ost. Kürzel: WL = Widerlager, MP = Mittelpfeiler, UB = Überbau, N/S/NO/NW/SO/SW = Himmelsrichtung; Mittelstreifen und Seitenstreifen-W/O liegen auf der Autobahn unter der Brücke.
 
 ## Properties pro Kategorie
 
@@ -75,6 +75,6 @@ Die Lagerdaten stehen neu in `BFH_Minor` statt in `CH_Lager`. In eurem Team-Repo
 
 - Bauwerk erstellt 2005 (`Baujahr` am IfcBridge). Lager, Fahrbahnbelag, Markierung, Fahrbahnübergänge und die Schutzplanken an den BAB-Seitenstreifen sind von 2018.
 - Sauberkeitsschicht und Magerbeton sind unbewehrt: `Ueberdeckung` = 0 heisst «nicht anwendbar». Regeln wie «Ueberdeckung ≥ 20» müssen diese Bauteile ausnehmen.
-- Von den Bauteilen entfernt: alle bisherigen Psets (`ASB-ING_2013`, `sonstige Attribute`, `Hyperlinks`, `Pset_BuildingElementProxyCommon`, `Pset_ManufacturerTypeInformation`, `Pset_RailingCommon`, `CH_Lager`, `CH_Lehre`) sowie zwei Hilfsobjekte ohne Bauteilcharakter (Projektnullpunkt, 3D-Jahreszahl).
-- Unverändert: Geometrie, GlobalIds, IFC-Klassen, die Psets am IfcBridge, `ObjectType` und die Typobjekte (Revit-Bezeichnungen, alle IfcBuildingElementProxyType).
+- Von den Bauteilen entfernt: alle bisherigen Psets (`ASB-ING_2013`, `sonstige Attribute`, `Hyperlinks`, `Pset_BuildingElementProxyCommon`, `Pset_ManufacturerTypeInformation`, `Pset_RailingCommon`, `CH_Lager`, `CH_Lehre`) sowie zwei Hilfsobjekte ohne Bauteilcharakter (Projektnullpunkt, 3D-Jahreszahl). Deren ungenutzte Geometrie- und Layer-Reste sind noch im File, ohne Bauteil.
+- Unverändert: Geometrie, GlobalIds, IFC-Klassen, die Psets an IfcBridge und IfcBridgePart, Material- und Klassifikationszuordnungen, `ObjectType` und die Typobjekte (Revit-Bezeichnungen, alle IfcBuildingElementProxyType).
 - Wie im Original: Alle Lager haben den PredefinedType ELASTOMERIC, 5 davon sind aber Topf- oder Kalottenlager (absichtlicher Prüffall, eure Regel R-01 findet genau diese 5). Kopfplatten sind teils IfcPlate, teils IfcBuildingElementProxy.
